@@ -1,23 +1,26 @@
-import type { PropsWithChildren } from "react"
-import Header from "./header"
-
+import type { PropsWithChildren } from "react";
+import Header from "./header";
+import { Link } from "react-router-dom";
 
 const Layout = ({ children }: PropsWithChildren) => {
   return (
     <div className="bg-gradient-to-br from-background to-muted">
-        <Header />
-        <main className="min-h-screen container mx-auto px-4 py-8">
-
+      <Header />
+      <main className="min-h-screen container mx-auto px-4 py-8">
         {children}
-        </main>
-        <footer className="border-t backdrop-blur py-12 supports-[backdrop-filter]:bg-background/60">
-            <div className="container mx-auto px-4 text-center text-gray-400">
-                <p>Made with 💗 by Kushal Gurung</p>
-            </div>
-        </footer>
-      
+      </main>
+      <footer className="border-t backdrop-blur py-12 supports-[backdrop-filter]:bg-background/60">
+        <div className="container mx-auto px-4 text-center text-gray-400">
+          <p>
+            Made with 💗 by{" "}
+            <Link to={`https://www.linkedin.com/in/kushalgurungg`}>
+              Kushal Gurung
+            </Link>
+          </p>
+        </div>
+      </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
