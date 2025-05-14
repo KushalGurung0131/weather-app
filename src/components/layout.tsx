@@ -12,7 +12,7 @@ const Layout = ({ children }: PropsWithChildren) => {
       <footer className="border-t backdrop-blur py-12 supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto px-4 text-center text-gray-400">
           <p>
-            Made with 💗 by<a href="https://www.linkedin.com/in/kushalgurungg/"
+            Made with 💗 by <a className="gap-1" href="https://www.linkedin.com/in/kushalgurungg/"
             target="_blank" rel="noopener noreferrer"
             >
               Kushal Gurung
